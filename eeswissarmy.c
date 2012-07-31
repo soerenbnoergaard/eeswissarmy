@@ -40,17 +40,17 @@ s: Silver\n\n");
   scanf ("%lf %lf %lf %c", &col[0], &col[1], &col[2], &tol);
 
   res = (10*col[0] + col[1]) * pow(10, col[2]);
-  printf ("\n%.2f ohm\n",res);
+  printf ("\n%.0f ohm - ",res);
 
   switch (tol){
     case 'g':
-      printf ("Tolerance 5\%\n");
+      printf ("5\%\n");
       break;
     case 's':
-      printf ("Tolerance 10\%\n");
+      printf ("10\%\n");
       break;
     default:
-      printf ("Invalid tolerance\n");
+      printf ("\nInvalid tolerance\n");
       break;
   }
 
